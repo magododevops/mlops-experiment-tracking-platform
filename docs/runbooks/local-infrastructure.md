@@ -70,3 +70,46 @@ docker compose down
 ```
 
 This stops and removes containers while retaining named volumes.
+
+## MLflow Tracking Server
+
+Build and start the tracking service:
+
+```bash
+docker compose build mlflow
+docker compose up -d --wait mlflow
+docker compose ps
+```
+
+Local tracking UI:
+
+http://localhost:5000
+
+Health check:
+
+```bash
+curl --fail --silent --show-error http://localhost:5000/health
+```
+
+The tracking service stores metadata in PostgreSQL and
+proxies artifact operations to the S3-compatible bucket.
+
+The MLflow container holds object storage credentials.
+Local training clients will communicate with the MLflow
+HTTP API instead of accessing S3 directly.
+
+### Troubleshooting
+
+```bash
+docker compose logs --tail=100 mlflow
+docker compose ps
+```
+
+### Security
+
+The server binds to localhost on the host machine.
+It is not configured for public or multi-user access.
+
+Do not expose port 5000 to untrusted networks.
+Add authentication, TLS, and least-privilege credentials
+before considering shared or remote deployments.
