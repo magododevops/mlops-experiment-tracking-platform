@@ -6,6 +6,10 @@ import json
 from pathlib import Path
 
 from mlops_experiment_tracking.data.ingestion import load_dataset
+from mlops_experiment_tracking.data.integrity import (
+    verify_prepared_dataset,
+    verify_raw_dataset,
+)
 from mlops_experiment_tracking.data.profiling import build_profile
 from mlops_experiment_tracking.data.schema import TARGET_COLUMN
 from mlops_experiment_tracking.data.splitting import (
@@ -47,6 +51,7 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    verify_raw_dataset(args.input)
     frame = load_dataset(args.input)
     partitions = split_dataset(frame, random_state=RANDOM_STATE)
 
@@ -94,6 +99,7 @@ def main() -> None:
         write_verified(args.output / filename, content)
 
     print()
+    verify_prepared_dataset(args.input, args.output)
     print("Dataset preparation PASSED")
     for name, dataset in datasets.items():
         failures = int(dataset[TARGET_COLUMN].sum())

@@ -1,5 +1,7 @@
 """Input data contracts for AI4I predictive maintenance."""
 
+import math
+
 import pandas as pd
 
 TARGET_COLUMN = "Machine failure"
@@ -71,6 +73,25 @@ def validate_dataset(frame: pd.DataFrame) -> None:
 
     if not frame.loc[:, NUMERIC_COLUMNS].apply(lambda column: column.map(pd.notna).all()).all():
         raise DataValidationError("Invalid numeric values detected")
+
+    for column in NUMERIC_COLUMNS:
+        if not frame[column].map(math.isfinite).all():
+            raise DataValidationError(f"{column} contains non-finite values")
+
+    positive_columns = (
+        "Air temperature [K]",
+        "Process temperature [K]",
+        "Rotational speed [rpm]",
+    )
+    nonnegative_columns = ("Torque [Nm]", "Tool wear [min]")
+
+    for column in positive_columns:
+        if not frame[column].gt(0).all():
+            raise DataValidationError(f"{column} must be positive")
+
+    for column in nonnegative_columns:
+        if not frame[column].ge(0).all():
+            raise DataValidationError(f"{column} must be nonnegative")
 
     if not frame["Type"].isin(("L", "M", "H")).all():
         raise DataValidationError("Unexpected equipment type")

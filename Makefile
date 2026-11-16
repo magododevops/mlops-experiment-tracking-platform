@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-.PHONY: help install lint format format-check test check
+.PHONY: help install lint format format-check test check verify-data
 
 help:
 	@echo "Available commands:"
@@ -27,3 +27,6 @@ test:
 	uv run --locked pytest
 
 check: lint format-check test
+
+verify-data:
+	uv run --locked python scripts/verify_dataset.py

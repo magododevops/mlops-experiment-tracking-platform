@@ -7,6 +7,7 @@ from mlops_experiment_tracking.data.ingestion import (
     download_dataset,
     load_dataset,
 )
+from mlops_experiment_tracking.data.integrity import verify_raw_dataset
 from mlops_experiment_tracking.data.schema import (
     FEATURE_COLUMNS,
     TARGET_COLUMN,
@@ -28,7 +29,8 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.output.exists():
-        print(f"Using existing dataset: {args.output}")
+        verify_raw_dataset(args.output)
+        print(f"Verified existing dataset: {args.output}")
     else:
         digest = download_dataset(args.output)
         print(f"Downloaded dataset. SHA-256: {digest}")

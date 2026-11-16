@@ -62,3 +62,37 @@ predictive maintenance performance.
 - Class imbalance analysis
 - Exploratory data analysis
 - Baseline evaluation
+
+## Data Quality Rules
+
+The ingestion contract rejects:
+
+- Missing or unexpected columns
+- Null and non-finite numeric values
+- Duplicate record and product identifiers
+- Invalid categorical equipment types
+- Nonbinary failure labels
+- Nonpositive temperatures or rotational speed
+- Negative torque or tool wear values
+
+## Reproducibility and Integrity
+
+The preparation uses a fixed seed of 42 with stratified splits:
+
+- Training: 60%
+- Validation: 20%
+- Test: 20%
+
+Run:
+
+```bash
+make verify-data
+```
+
+The verifier checks raw-file integrity and regenerates the
+expected partitions to compare content, hashes, statistics,
+and manifest metadata.
+
+The SHA-256 manifests detect changes relative to the recorded
+data, but they are not cryptographic signatures or proof of
+upstream authenticity.

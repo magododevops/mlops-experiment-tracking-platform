@@ -88,3 +88,27 @@ introduced as the corresponding components are implemented.
 ## License
 
 No project license has been selected yet.
+
+## Dataset Preparation
+
+This project uses the synthetic AI4I 2020 Predictive Maintenance
+dataset from the UCI Machine Learning Repository.
+
+```bash
+uv run --locked python scripts/download_dataset.py
+uv run --locked python scripts/prepare_dataset.py
+make verify-data
+```
+
+The dataset is separated into stratified 60/20/20 training,
+validation, and test partitions using a fixed random seed.
+
+Dataset and split manifests record SHA-256 digests.
+The verifier regenerates the expected partitions and detects
+unexpected changes to local files.
+
+Exploratory statistics are calculated only from training data.
+Failure-mode labels and identifiers are excluded from model inputs.
+
+See [Dataset Documentation](docs/data/dataset.md) for provenance,
+feature contracts and limitations.
