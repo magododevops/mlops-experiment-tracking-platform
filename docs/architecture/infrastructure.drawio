@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-16T00:00:00.000Z" agent="MLOps architecture" version="24.7.17" type="device">
+  <diagram id="runtime-infrastructure" name="Runtime Infrastructure">
+    <mxGraphModel dx="1480" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1480" pageHeight="760" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v2" value="ML EXPERIMENT TRACKING PLATFORM" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontStyle=1;fontColor=#2563EB;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="44" width="269.7" height="18.0" as="geometry" />
+        </mxCell>
+        <mxCell id="v3" value="Runtime Infrastructure" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=34;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="81" width="433.84" height="40.8" as="geometry" />
+        </mxCell>
+        <mxCell id="v4" value="A reproducible local MLOps stack — separated compute, tracking, and persistence" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="133" width="641.48" height="16.8" as="geometry" />
+        </mxCell>
+        <mxCell id="v5" value="LOCAL DEVELOPMENT  /  MANUAL EXECUTION" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="53" width="286.52" height="15.6" as="geometry" />
+        </mxCell>
+        <mxCell id="v6" value="line" style="shape=line;strokeColor=#E5EDF5;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="172" width="1480" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v7" value="" style="rounded=1;arcSize=16;fillColor=#F9FBFE;strokeColor=#E5ECF4;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="398" height="396" as="geometry" />
+        </mxCell>
+        <mxCell id="v8" value="EXECUTION" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="85" y="227" width="62.64" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v9" value="" style="rounded=1;arcSize=16;fillColor=#F9FBFE;strokeColor=#E5ECF4;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="482" y="210" width="936" height="396" as="geometry" />
+        </mxCell>
+        <mxCell id="v10" value="MLOPS SERVICES · DOCKER COMPOSE" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="507" y="227" width="215.76" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v11" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="288" width="327" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="v12" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%2314253C%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20496%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M165.9%20397.4c0%202-2.3%203.6-5.2%203.6-3.3.3-5.6-1.3-5.6-3.6%200-2%202.3-3.6%205.2-3.6%203-.3%205.6%201.3%205.6%203.6zm-31.1-4.5c-.7%202%201.3%204.3%204.3%204.9%202.6%201%205.6%200%206.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2%202.3zm44.2-1.7c-2.9.7-4.9%202.6-4.6%204.9.3%202%202.9%203.3%205.9%202.6%202.9-.7%204.9-2.6%204.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8%208C106.1%208%200%20113.3%200%20252c0%20110.9%2069.8%20205.8%20169.5%20239.2%2012.8%202.3%2017.3-5.6%2017.3-12.1%200-6.2-.3-40.4-.3-61.4%200%200-70%2015-84.7-29.8%200%200-11.4-29.1-27.8-36.6%200%200-22.9-15.7%201.6-15.4%200%200%2024.9%202%2038.6%2025.8%2021.9%2038.6%2058.6%2027.5%2072.9%2020.9%202.3-16%208.8-27.1%2016-33.7-55.9-6.2-112.3-14.3-112.3-110.5%200-27.5%207.6-41.3%2023.6-58.9-2.6-6.5-11.1-33.3%202.6-67.9%2020.9-6.5%2069%2027%2069%2027%2020-5.6%2041.5-8.5%2062.8-8.5s42.8%202.9%2062.8%208.5c0%200%2048.1-33.6%2069-27%2013.7%2034.7%205.2%2061.4%202.6%2067.9%2016%2017.7%2025.8%2031.5%2025.8%2058.9%200%2096.5-58.9%20104.2-114.8%20110.5%209.2%207.9%2017%2022.9%2017%2046.4%200%2033.7-.3%2075.4-.3%2083.6%200%206.5%204.6%2014.4%2017.3%2012.1C428.2%20457.8%20496%20362.9%20496%20252%20496%20113.3%20383.5%208%20244.8%208zM97.2%20352.9c-1.3%201-1%203.3.7%205.2%201.6%201.6%203.9%202.3%205.2%201%201.3-1%201-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7%201.3.3%202.9%202.3%203.9%201.6%201%203.6.7%204.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4%2035.6c-1.6%201.3-1%204.3%201.3%206.2%202.3%202.3%205.2%202.6%206.5%201%201.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6%201-1.6%203.6%200%205.9%201.6%202.3%204.3%203.3%205.6%202.3%201.6-1.3%201.6-3.9%200-6.2-1.4-2.3-4-3.3-5.6-2z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="121" y="322" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v13" value="GitHub repository" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="319" width="167.62" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v14" value="Python · uv.lock" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="348" width="111.35999999999999" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v15" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="525" y="288" width="345" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="v16" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%232563EB%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M349.9%20236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2%20144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1%200h-66.1v60.1h66.1v-60.1zm276.8%20100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3%2014c-18.4%2027.8-23.4%2073.6-3.7%20103.8-8.7%204.7-25.8%2011.1-48.4%2010.7H2.4c-8.7%2050.8%205.8%20116.8%2044%20162.1%2037.1%2043.9%2092.7%2066.2%20165.4%2066.2%20157.4%200%20273.9-72.5%20328.4-204.2%2021.4.4%2067.6.1%2091.3-45.2%201.5-2.5%206.6-13.2%208.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1%200h-66.1v59.4h66.1v-59.4zm78.1%200h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="556" y="322" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v17" value="Training container" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="319" width="177.48" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v18" value="Docker · scikit-learn" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="348" width="146.16" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v19" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="525" y="462" width="345" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="v20" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%237154C5%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M64%2064c0-17.7-14.3-32-32-32S0%2046.3%200%2064L0%20400c0%2044.2%2035.8%2080%2080%2080l400%200c17.7%200%2032-14.3%2032-32s-14.3-32-32-32L80%20416c-8.8%200-16-7.2-16-16L64%2064zm406.6%2086.6c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L320%20210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3%200l-112%20112c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200L240%20221.3l57.4%2057.4c12.5%2012.5%2032.8%2012.5%2045.3%200l128-128z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="556" y="496" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v21" value="MLflow Tracking" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="493" width="147.89999999999998" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v22" value="Runs · Registry" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="522" width="104.39999999999999" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v23" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="288" width="365" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="v24" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%232563EB%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M448%2080l0%2048c0%2044.2-100.3%2080-224%2080S0%20172.2%200%20128L0%2080C0%2035.8%20100.3%200%20224%200S448%2035.8%20448%2080zM393.2%20214.7c20.8-7.4%2039.9-16.9%2054.8-28.6L448%20288c0%2044.2-100.3%2080-224%2080S0%20332.2%200%20288L0%20186.1c14.9%2011.8%2034%2021.2%2054.8%2028.6C99.7%20230.7%20159.5%20240%20224%20240s124.3-9.3%20169.2-25.3zM0%20346.1c14.9%2011.8%2034%2021.2%2054.8%2028.6C99.7%20390.7%20159.5%20400%20224%20400s124.3-9.3%20169.2-25.3c20.8-7.4%2039.9-16.9%2054.8-28.6l0%2085.9c0%2044.2-100.3%2080-224%2080S0%20476.2%200%20432l0-85.9z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1036" y="322" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v25" value="PostgreSQL 17" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="319" width="128.17999999999998" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v26" value="Backend store" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="348" width="90.47999999999999" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v27" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="462" width="365" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="v28" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%23C07829%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M234.5%205.7c13.9-5%2029.1-5%2043.1%200l192%2068.6C495%2083.4%20512%20107.5%20512%20134.6l0%20242.9c0%2027-17%2051.2-42.5%2060.3l-192%2068.6c-13.9%205-29.1%205-43.1%200l-192-68.6C17%20428.6%200%20404.5%200%20377.4L0%20134.6c0-27%2017-51.2%2042.5-60.3l192-68.6zM256%2066L82.3%20128%20256%20190l173.7-62L256%2066zm32%20368.6l160-57.1%200-188L288%20246.6l0%20188z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1036" y="496" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v29" value="Silo · S3 storage" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="493" width="167.62" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v30" value="Artifact store" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="522" width="97.44" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="v11" target="v15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="v15" target="v19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="v19" target="v23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="937" y="517" />
+              <mxPoint x="937" y="343" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="v19" target="v27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v35" value="INPUT" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="660" width="48" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v36" value="AI4I 2020 · read-only data mount" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="682" width="222.71999999999997" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v37" value="OUTPUT" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="508" y="660" width="48" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v38" value="Manifest JSON · host-mounted directory" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="508" y="682" width="264.48" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v39" value="CONTROL" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="660" width="48.72" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v40" value="Manual trigger · non-root · no production serving" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="682" width="341.03999999999996" height="14.399999999999999" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

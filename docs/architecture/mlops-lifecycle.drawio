@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-16T00:00:00.000Z" agent="MLOps architecture" version="24.7.17" type="device">
+  <diagram id="training-&amp;-governance-flow" name="Training &amp; Governance Flow">
+    <mxGraphModel dx="1480" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1480" pageHeight="760" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v2" value="ML EXPERIMENT TRACKING PLATFORM" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=15;fontStyle=1;fontColor=#2563EB;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="44" width="269.7" height="18.0" as="geometry" />
+        </mxCell>
+        <mxCell id="v3" value="Training &amp; Governance Flow" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=34;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="81" width="512.7199999999999" height="40.8" as="geometry" />
+        </mxCell>
+        <mxCell id="v4" value="One controlled experiment lifecycle — from data verification to read-only observation" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="133" width="690.1999999999999" height="16.8" as="geometry" />
+        </mxCell>
+        <mxCell id="v5" value="LOCAL DEVELOPMENT  /  MANUAL EXECUTION" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="53" width="286.52" height="15.6" as="geometry" />
+        </mxCell>
+        <mxCell id="v6" value="line" style="shape=line;strokeColor=#E5EDF5;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="172" width="1480" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v7" value="" style="rounded=1;arcSize=16;fillColor=#F9FBFE;strokeColor=#E5ECF4;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="1360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="v8" value="PREPARE &amp; TRAIN" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="85" y="237" width="104.39999999999999" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v9" value="" style="rounded=1;arcSize=16;fillColor=#F9FBFE;strokeColor=#E5ECF4;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="397" width="1360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="v10" value="TRACK &amp; GOVERN" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="85" y="414" width="97.44" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v11" value="" style="rounded=1;arcSize=16;fillColor=#F9FBFE;strokeColor=#E5ECF4;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="574" width="1360" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="v12" value="OPERATE" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="85" y="591" width="48.72" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v13" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="88" y="263" width="276" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="v14" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%232563EB%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20384%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M192%200c-41.8%200-77.4%2026.7-90.5%2064L64%2064C28.7%2064%200%2092.7%200%20128L0%20448c0%2035.3%2028.7%2064%2064%2064l256%200c35.3%200%2064-28.7%2064-64l0-320c0-35.3-28.7-64-64-64l-37.5%200C269.4%2026.7%20233.8%200%20192%200zm0%2064a32%2032%200%201%201%200%2064%2032%2032%200%201%201%200-64zM305%20273L177%20401c-9.4%209.4-24.6%209.4-33.9%200L79%20337c-9.4-9.4-9.4-24.6%200-33.9s24.6-9.4%2033.9%200l47%2047L271%20239c9.4-9.4%2024.6-9.4%2033.9%200s9.4%2024.6%200%2033.9z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="119" y="297" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v15" value="Dataset verification" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="173" y="294" width="197.2" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v16" value="Schema · SHA-256" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="173" y="323" width="111.35999999999999" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v17" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="432" y="263" width="276" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="v18" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%232563EB%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M439.8%20200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0%2036.8-31.2%2067.8-66.8%2067.8H172.7c-29.2%200-53.4%2025-53.4%2054.3v101.8c0%2029%2025.2%2046%2053.4%2054.3%2033.8%209.9%2066.3%2011.7%20106.8%200%2026.9-7.8%2053.4-23.5%2053.4-54.3v-40.7H226.2v-13.6h160.2c31.1%200%2042.6-21.7%2053.4-54.2%2011.2-33.5%2010.7-65.7%200-108.6zM286.2%20404c11.1%200%2020.1%209.1%2020.1%2020.3%200%2011.3-9%2020.4-20.1%2020.4-11%200-20.1-9.2-20.1-20.4.1-11.3%209.1-20.3%2020.1-20.3zM167.8%20248.1h106.8c29.7%200%2053.4-24.5%2053.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2%208-53.4%2024.7-53.4%2055.6v40.7h106.9v13.6h-147c-31.1%200-58.3%2018.7-66.8%2054.2-9.8%2040.7-10.2%2066.1%200%20108.6%207.6%2031.6%2025.7%2054.2%2056.8%2054.2H101v-48.8c0-35.3%2030.5-66.4%2066.8-66.4zm-6.7-142.6c-11.1%200-20.1-9.1-20.1-20.3.1-11.3%209-20.4%2020.1-20.4%2011%200%2020.1%209.2%2020.1%2020.4s-9%2020.3-20.1%2020.3z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="463" y="297" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v19" value="Train baselines" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="517" y="294" width="147.89999999999998" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v20" value="Dummy · Logistic" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="517" y="323" width="111.35999999999999" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v21" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="778" y="263" width="276" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="v22" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%237154C5%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M64%2064c0-17.7-14.3-32-32-32S0%2046.3%200%2064L0%20400c0%2044.2%2035.8%2080%2080%2080l400%200c17.7%200%2032-14.3%2032-32s-14.3-32-32-32L80%20416c-8.8%200-16-7.2-16-16L64%2064zm406.6%2086.6c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L320%20210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3%200l-112%20112c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200L240%20221.3l57.4%2057.4c12.5%2012.5%2032.8%2012.5%2045.3%200l128-128z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="809" y="297" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v23" value="Evaluation policy" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="863" y="294" width="167.62" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v24" value="Recall · false positives" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="863" y="323" width="167.03999999999996" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v25" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="263" width="276" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="v26" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%237154C5%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M288%200L160%200%20128%200C110.3%200%2096%2014.3%2096%2032s14.3%2032%2032%2032l0%20132.8c0%2011.8-3.3%2023.5-9.5%2033.5L10.3%20406.2C3.6%20417.2%200%20429.7%200%20442.6C0%20480.9%2031.1%20512%2069.4%20512l309.2%200c38.3%200%2069.4-31.1%2069.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5%20230.4c-6.2-10.1-9.5-21.7-9.5-33.5L320%2064c17.7%200%2032-14.3%2032-32s-14.3-32-32-32L288%200zM192%20196.8L192%2064l64%200%200%20132.8c0%2023.7%206.6%2046.9%2019%2067.1L309.5%20320l-171%200L173%20263.9c12.4-20.2%2019-43.4%2019-67.1z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1151" y="297" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v27" value="MLflow runs" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1205" y="294" width="108.46" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v28" value="Metrics · artifacts" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1205" y="323" width="132.24" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="v13" target="v17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="v17" target="v21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="v21" target="v25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v32" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="88" y="438" width="276" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="v33" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%23C07829%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M264.5%205.2c14.9-6.9%2032.1-6.9%2047%200l218.6%20101c8.5%203.9%2013.9%2012.4%2013.9%2021.8s-5.4%2017.9-13.9%2021.8l-218.6%20101c-14.9%206.9-32.1%206.9-47%200L45.9%20149.8C37.4%20145.8%2032%20137.3%2032%20128s5.4-17.9%2013.9-21.8L264.5%205.2zM476.9%20209.6l53.2%2024.6c8.5%203.9%2013.9%2012.4%2013.9%2021.8s-5.4%2017.9-13.9%2021.8l-218.6%20101c-14.9%206.9-32.1%206.9-47%200L45.9%20277.8C37.4%20273.8%2032%20265.3%2032%20256s5.4-17.9%2013.9-21.8l53.2-24.6%20152%2070.2c23.4%2010.8%2050.4%2010.8%2073.8%200l152-70.2zm-152%20198.2l152-70.2%2053.2%2024.6c8.5%203.9%2013.9%2012.4%2013.9%2021.8s-5.4%2017.9-13.9%2021.8l-218.6%20101c-14.9%206.9-32.1%206.9-47%200L45.9%20405.8C37.4%20401.8%2032%20393.3%2032%20384s5.4-17.9%2013.9-21.8l53.2-24.6%20152%2070.2c23.4%2010.8%2050.4%2010.8%2073.8%200z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="119" y="472" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v34" value="Model Registry" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="173" y="469" width="138.04" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v35" value="Versioned candidate" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="173" y="498" width="132.24" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v36" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="432" y="438" width="276" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="v37" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%2314856C%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M256%200c4.6%200%209.2%201%2013.4%202.9L457.7%2082.8c22%209.3%2038.4%2031%2038.3%2057.2c-.5%2099.2-41.3%20280.7-213.6%20363.2c-16.7%208-36.1%208-52.8%200C57.3%20420.7%2016.5%20239.2%2016%20140c-.1-26.2%2016.3-47.9%2038.3-57.2L242.7%202.9C246.8%201%20251.4%200%20256%200zm0%2066.8l0%20378.1C394%20378%20431.1%20230.1%20432%20141.4L256%2066.8s0%200%200%200z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="463" y="472" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v38" value="Promotion gate" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="517" y="469" width="138.04" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v39" value="Validation checks" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="517" y="498" width="118.32" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v40" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="778" y="438" width="276" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="v41" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%23C07829%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M80%20104a24%2024%200%201%200%200-48%2024%2024%200%201%200%200%2048zm80-24c0%2032.8-19.7%2061-48%2073.3l0%2087.8c18.8-10.9%2040.7-17.1%2064-17.1l96%200c35.3%200%2064-28.7%2064-64l0-6.7C307.7%20141%20288%20112.8%20288%2080c0-44.2%2035.8-80%2080-80s80%2035.8%2080%2080c0%2032.8-19.7%2061-48%2073.3l0%206.7c0%2070.7-57.3%20128-128%20128l-96%200c-35.3%200-64%2028.7-64%2064l0%206.7c28.3%2012.3%2048%2040.5%2048%2073.3c0%2044.2-35.8%2080-80%2080s-80-35.8-80-80c0-32.8%2019.7-61%2048-73.3l0-6.7%200-198.7C19.7%20141%200%20112.8%200%2080C0%2035.8%2035.8%200%2080%200s80%2035.8%2080%2080zm232%200a24%2024%200%201%200%20-48%200%2024%2024%200%201%200%2048%200zM80%20456a24%2024%200%201%200%200-48%2024%2024%200%201%200%200%2048z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="809" y="472" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v42" value="Staging-demo alias" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="863" y="469" width="177.48" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v43" value="Explicit demo approval" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="863" y="498" width="153.12" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v44" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="438" width="276" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="v45" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%232563EB%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M9.4%2086.6C-3.1%2074.1-3.1%2053.9%209.4%2041.4s32.8-12.5%2045.3%200l192%20192c12.5%2012.5%2012.5%2032.8%200%2045.3l-192%20192c-12.5%2012.5-32.8%2012.5-45.3%200s-12.5-32.8%200-45.3L178.7%20256%209.4%2086.6zM256%20416l288%200c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032l-288%200c-17.7%200-32-14.3-32-32s14.3-32%2032-32z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1151" y="472" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v46" value="Inference CLI" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1205" y="469" width="128.17999999999998" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v47" value="No production serving" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1205" y="498" width="146.16" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="v32" target="v36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="v36" target="v40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#91A2B8;fontColor=#64748B;fontSize=11;labelBackgroundColor=#FFFFFF;dashed=1;dashPattern=6 5;" edge="1" parent="1" source="v40" target="v44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v51" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="616" width="435" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="v52" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%2314856C%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M64%2064c0-17.7-14.3-32-32-32S0%2046.3%200%2064L0%20400c0%2044.2%2035.8%2080%2080%2080l400%200c17.7%200%2032-14.3%2032-32s-14.3-32-32-32L80%20416c-8.8%200-16-7.2-16-16L64%2064zm406.6%2086.6c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L320%20210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3%200l-112%20112c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200L240%20221.3l57.4%2057.4c12.5%2012.5%2032.8%2012.5%2045.3%200l128-128z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="261" y="650" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v53" value="Execution observer" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="315" y="647" width="177.48" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v54" value="Read-only MLflow audit" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="315" y="676" width="153.12" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v55" value="" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;strokeColor=#DDE5EF;fillColor=#FFFFFF;strokeWidth=1.2;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="825" y="616" width="435" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="v56" value="" style="shape=image;image=data:image/svg+xml,%3Csvg%20fill%3D%22%23C07829%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20384%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.%20--%3E%3Cpath%20d%3D%22M64%200C28.7%200%200%2028.7%200%2064L0%20448c0%2035.3%2028.7%2064%2064%2064l256%200c35.3%200%2064-28.7%2064-64l0-288-128%200c-17.7%200-32-14.3-32-32L224%200%2064%200zM256%200l0%20128%20128%200L256%200zM153%20289l-31%2031%2031%2031c9.4%209.4%209.4%2024.6%200%2033.9s-24.6%209.4-33.9%200L71%20337c-9.4-9.4-9.4-24.6%200-33.9l48-48c9.4-9.4%2024.6-9.4%2033.9%200s9.4%2024.6%200%2033.9zM265%20255l48%2048c9.4%209.4%209.4%2024.6%200%2033.9l-48%2048c-9.4%209.4-24.6%209.4-33.9%200s-9.4-24.6%200-33.9l31-31-31-31c-9.4-9.4-9.4-24.6%200-33.9s24.6-9.4%2033.9%200z%22%2F%3E%3C%2Fsvg%3E;aspect=fixed;imageAspect=0;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="856" y="650" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v57" value="Failure evidence" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#14253C;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="910" y="647" width="157.76" height="20.4" as="geometry" />
+        </mxCell>
+        <mxCell id="v58" value="JSON · exit code · no auto-retry" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="910" y="676" width="222.71999999999997" height="14.399999999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="v59" value="Selection and registration are explicit steps; a training run does not auto-deploy." style="text;html=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#61738A;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="732" width="577.68" height="14.399999999999999" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
