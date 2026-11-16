@@ -19,6 +19,7 @@ from mlflow.tracking import MlflowClient
 from mlops_experiment_tracking.pipelines.execution import (
     EXPECTED_RUN_NAMES,
     extract_run_ids,
+    validate_git_commit,
     validate_run_records,
 )
 
@@ -54,7 +55,12 @@ def run_command(command: list[str]) -> str:
 
 
 def require_clean_repository() -> str:
-    """Capture a committed, reproducible source revision."""
+    """Capture local Git revision or validate a supplied image revision."""
+    supplied_commit = os.environ.get("PIPELINE_GIT_COMMIT")
+
+    if supplied_commit is not None:
+        return validate_git_commit(supplied_commit)
+
     status = subprocess.check_output(
         ["git", "status", "--porcelain"],
         text=True,

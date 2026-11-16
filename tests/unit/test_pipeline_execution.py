@@ -6,6 +6,7 @@ import pytest
 
 from mlops_experiment_tracking.pipelines.execution import (
     extract_run_ids,
+    validate_git_commit,
     validate_run_records,
 )
 
@@ -88,3 +89,16 @@ def test_rejects_invalid_f1(records: list[dict]) -> None:
 
     with pytest.raises(ValueError, match="F1"):
         validate_run_records(changed, HASH)
+
+
+def test_accepts_full_git_commit_sha() -> None:
+    assert validate_git_commit("a" * 40) == "a" * 40
+
+
+@pytest.mark.parametrize(
+    "value",
+    ["", "abc1234", "A" * 40, "z" * 40, "a" * 41],
+)
+def test_rejects_invalid_git_commit(value: str) -> None:
+    with pytest.raises(ValueError, match="Git commit SHA"):
+        validate_git_commit(value)

@@ -12,6 +12,14 @@ EXPECTED_RUN_NAMES = (
 RUN_ID_PATTERN = re.compile(r"^Run ID:\s*([a-f0-9]{32})\s*$", re.MULTILINE)
 
 
+def validate_git_commit(value: str) -> str:
+    """Validate the Git revision supplied by a pipeline launcher."""
+    if not re.fullmatch(r"[0-9a-f]{40}", value):
+        raise ValueError("Expected a full lowercase Git commit SHA")
+
+    return value
+
+
 def extract_run_ids(output: str) -> tuple[str, ...]:
     """Extract the exact three run IDs emitted by our training script."""
     ids = tuple(RUN_ID_PATTERN.findall(output))

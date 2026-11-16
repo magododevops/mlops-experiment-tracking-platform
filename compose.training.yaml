@@ -1,0 +1,38 @@
+services:
+  training:
+    profiles:
+      - training
+
+    image: mlops-training:local
+
+    build:
+      context: .
+      dockerfile: infrastructure/docker/training.Dockerfile
+
+    networks:
+      - backend
+
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      PIPELINE_GIT_COMMIT: ${PIPELINE_GIT_COMMIT:-}
+      PYTHONDONTWRITEBYTECODE: "1"
+      UV_NO_SYNC: "1"
+      UV_NO_CACHE: "1"
+      HOME: /tmp
+
+    volumes:
+      - ./data:/app/data:ro
+      - ./outputs:/app/outputs
+
+    read_only: true
+
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,size=256m,mode=1777
+
+    security_opt:
+      - no-new-privileges:true
+
+    cap_drop:
+      - ALL
+
+    restart: "no"
