@@ -22,6 +22,11 @@ from mlops_experiment_tracking.pipelines.execution import (
     validate_git_commit,
     validate_run_records,
 )
+from mlops_experiment_tracking.pipelines.failures import (
+    PipelineStageError,
+    build_failure_manifest,
+    save_failure_manifest,
+)
 
 EXPERIMENT_NAME = "predictive-maintenance-baselines"
 
@@ -129,7 +134,7 @@ def get_run_records(
     return records
 
 
-def main() -> None:
+def execute_pipeline(execution_id: str, started_at: str) -> None:
     git_commit = require_clean_repository()
 
     tracking_uri = os.environ.get(
@@ -150,9 +155,6 @@ def main() -> None:
 
     dataset_hash = hashlib.sha256(source.read_bytes()).hexdigest()
 
-    execution_id = uuid.uuid4().hex
-    started_at = utc_now()
-
     print(f"Pipeline execution ID: {execution_id}")
     print(f"Git commit: {git_commit}")
     print(f"Tracking URI: {tracking_uri}")
@@ -166,6 +168,9 @@ def main() -> None:
             "scripts/verify_dataset.py",
         ]
     )
+
+    if os.environ.get("PIPELINE_TEST_FAIL_AT") == "before_training":
+        raise PipelineStageError("training_preflight", "Controlled failure injection")
 
     training_output = run_command(
         [
@@ -198,6 +203,21 @@ def main() -> None:
             record["run_id"],
             "pipeline_type",
             "baseline-training",
+        )
+        client.set_tag(
+            record["run_id"],
+            "mlflow.source.name",
+            "scripts/log_baseline_experiments.py",
+        )
+        client.set_tag(
+            record["run_id"],
+            "mlflow.source.type",
+            "LOCAL",
+        )
+        client.set_tag(
+            record["run_id"],
+            "mlflow.source.git.commit",
+            git_commit,
         )
 
     for record in records:
@@ -254,6 +274,58 @@ def main() -> None:
     print("Model Registry: UNCHANGED")
     print("Held-out test dataset: NOT USED")
     print("TRAINING PIPELINE: PASSED")
+
+
+def main() -> None:
+    """Execute training and persist failure evidence when it aborts."""
+    execution_id = uuid.uuid4().hex
+    started_at = utc_now()
+
+    try:
+        execute_pipeline(execution_id, started_at)
+    except Exception as error:
+        stage = error.stage if isinstance(error, PipelineStageError) else "orchestration"
+
+        # The revision may be available even when preflight fails.
+        revision = os.environ.get("PIPELINE_GIT_COMMIT")
+        if revision is None:
+            try:
+                revision = subprocess.check_output(
+                    ["git", "rev-parse", "HEAD"],
+                    text=True,
+                    stderr=subprocess.DEVNULL,
+                ).strip()
+            except (OSError, subprocess.CalledProcessError):
+                revision = None
+
+        evidence = build_failure_manifest(
+            execution_id=execution_id,
+            started_at=started_at,
+            stage=stage,
+            error_type=type(error).__name__,
+            git_commit=revision,
+        )
+
+        destination = save_failure_manifest(
+            evidence,
+            output_root=Path("outputs/pipelines"),
+        )
+
+        print(
+            json.dumps(
+                {
+                    "event": "PIPELINE_FAILED",
+                    "pipeline_execution_id": execution_id,
+                    "stage": stage,
+                    "error_type": type(error).__name__,
+                    "failure_manifest": str(destination),
+                },
+                sort_keys=True,
+            ),
+            file=sys.stderr,
+            flush=True,
+        )
+        raise SystemExit(1) from error
 
 
 if __name__ == "__main__":
