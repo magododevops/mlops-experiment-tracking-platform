@@ -8,6 +8,9 @@ services:
     build:
       context: .
       dockerfile: infrastructure/docker/training.Dockerfile
+      args:
+        TRAINING_UID: ${TRAINING_UID:-1000}
+        TRAINING_GID: ${TRAINING_GID:-1000}
 
     networks:
       - backend
