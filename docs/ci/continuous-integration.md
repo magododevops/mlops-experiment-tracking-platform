@@ -2,16 +2,15 @@
 
 ## Goal
 
-Validate every Pull Request targeting `main` and every push to `main`.
+Run Python quality checks on demand before merging or releasing.
 
 This pipeline verifies code quality and unit tests without
 requiring locally stored datasets or the MLflow infrastructure.
 
 ## Triggers
 
-- Pull requests targeting `main`
-- Pushes to `main`
-- Manual execution through GitHub Actions
+- Manual execution through GitHub Actions (`workflow_dispatch`)
+- No automatic execution on push or pull request
 
 ## Checks
 
